@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    メッセージ一覧
+   <u> メッセージ一覧</u>
   </div>
     
   <div class="panel-body">
@@ -13,13 +13,13 @@
 </div>
 
 <%= form_for(Message.new) do |f| %>
- <p>名前</p> 
+<strong><p>名前</p></strong> 
   <%= f.text_field :name %>
 
 
- <p>内容</p> 
- <%= f.text_area :body %>
-# <textarea cols="40" id="page_content" name="page[content]" rows="20"></textarea>
+ <strong><p>内容</p></strong>
+ <%= f.text_area :body  %>
+
  
   <%= f.submit class: "btn btn-sm btn-success" %>
 <% end %>
